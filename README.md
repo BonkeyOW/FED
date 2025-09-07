@@ -58,11 +58,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
-  <1. De homepage heeft geen h1 waardoor het voor de (luisterende) gebruiker niet duidelijk is waar de website over gaat. Alle andere pagina's hebben daarentegen wel een h1.
+  1. De homepage heeft geen h1 waardoor het voor de (luisterende) gebruiker niet duidelijk is waar de website over gaat. Alle andere pagina's hebben daarentegen wel een h1.
   2. De afbeeldingen van alle items op het menu hebben geen alt-tekst. De gebruiker hoort dan alleen maar "Unlabelled Image".
   3. Veel onnodige div's in de html code
   4. De teksten zijn duidelijk te begrijpen en je kan makkelijk navigeren door de website met de voiceover.
-  >
 
 </details>
 
