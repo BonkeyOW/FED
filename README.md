@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw
 
   #### Je focus:
-  Surface Plane
+  Responsive design
  
 </details>
 
@@ -36,15 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  https://www.mcdonalds.com/nl/nl-nl.html 
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  McDonalds Homepage 
+  <img src="readme-images/mcd-homepage.png" width="375px" alt="Homepage van McDonalds Nederland">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  McDonalds Coca-Cola
+  <img src="readme-images/mcd-cocacola.png" width="375px" alt="Coca-Cola pagina van McDonalds Nederland">
  
 </details>
 
@@ -58,6 +58,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
+  <
+  1. De homepage heeft geen h1 waardoor het voor de (luisterende) gebruiker niet duidelijk is waar de website over gaat. Alle andere pagina's hebben daarentegen wel een h1.
+  2. De afbeeldingen van alle items op het menu hebben geen alt-tekst. De gebruiker hoort dan alleen maar "Unlabelled Image".
+  3. Veel onnodige div's in de html code
+  4. De teksten zijn duidelijk te begrijpen en je kan makkelijk navigeren door de website met de voiceover.
+  >
+
 </details>
 
 
@@ -68,13 +75,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown-homepage-smallscreen.jpg" width="375px" alt="breakdown van de mcdonalds nederland homepage in smallscreen formaat">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/breakdown-cocacola-smallscreen.jpg" width="375px" alt="breakdown van de mcdonalds nederland cocacola menu item in smallscreen formaat">
 
 </details>
 
