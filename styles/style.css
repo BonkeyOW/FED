@@ -2,7 +2,7 @@
 /* CSS REMEDY */
 /**************/
 *, *::after, *::before {
-  box-sizing:border-box;  
+  box-sizing:border-box; 
 }
 
 
@@ -28,4 +28,58 @@
 /****************/
 
 /* jouw code */
+*{
+	margin: 0;
+}
+
+/***********************/
+/* STYLING VOOR HEADER */
+/***********************/
+
+header nav{
+	display: flex;
+}
+
+header a img{
+	width: 48px;
+	height: 48px;
+}
+
+header nav details div{
+	border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+/*********************/
+/* STYLING VOOR MAIN */
+/*********************/
+
+main{
+	margin-top: 48px;
+}
+
+h1{
+	clip: rect(0 0 0 0);
+  	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+main ul{
+	border: #111;
+}
+
+main ul li{
+	list-style: none;
+}
+
+main ul li img{
+	object-fit: cover;
+    height: auto;
+    width: 100%;
+    position: relative;
+    background-size: auto auto;
+}
 
