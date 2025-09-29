@@ -121,50 +121,6 @@ nav summary::after {
 	font-weight: bold;
 	cursor: pointer;
 }
-  
-@media (max-width: 768px) {
-	#hamburger {
-	  display: block;
-	}
-  
-	#nav-menu.active {
-	  display: flex;
-	}
-  
-	#close-menu.active {
-	  display: block;
-	}
-}
-  
-@media (min-width: 769px) {
-	#hamburger,
-	#close-menu {
-	  display: none;
-	}
-  
-	#nav-menu {
-	  display: flex;
-	  position: static;
-	  flex-direction: row;
-	  gap: 2em;
-	}
-  
-	#nav-menu ul {
-	  display: flex;
-	  gap: 1em;
-	}
-  
-	.submenu {
-	  display: none;
-	  position: absolute;
-	  background: white;
-	  padding: 0.5em;
-	}
-  
-	.submenu-toggle:hover + .submenu {
-	  display: block;
-	}
-}
 
 header ul li{
 	list-style-type: none;
@@ -205,6 +161,108 @@ header nav div ul li details ul li:nth-child(n+2){
 	display: flex;
   	align-items: center;
 	margin: 0;
+}
+
+@media (max-width: 768px) {
+	#hamburger {
+	  display: block;
+	}
+  
+	#nav-menu.active {
+	  display: flex;
+	}
+  
+	#close-menu.active {
+	  display: block;
+	}
+}
+
+@media (min-width: 768px){
+	#hamburger, #close-menu {
+	  display: none;
+	}
+  
+	#nav-menu {
+	display: grid;
+	grid-template-columns: auto auto;
+	position: static;
+}
+
+	#nav-menu ul:nth-of-type(1),
+	#nav-menu ul:nth-of-type(2) {
+	grid-column: 1;
+	}
+	
+	#nav-menu ul:nth-of-type(3) {
+	grid-column: 2;
+	grid-row: 1 / span 2; 
+	}
+  
+	#nav-menu ul {
+	  display: flex;
+	  gap: 1em;
+	}
+  
+	.submenu {
+	  display: none;
+	  position: absolute;
+	  background: white;
+	  padding: 0.5em;
+	}
+  
+	.submenu-toggle:hover + .submenu {
+	  display: block;
+	}
+
+	header ul li{
+		list-style-type: none;
+		margin: 0;
+	}
+	
+	header ul li summary{
+		font-weight: normal;
+	}
+	
+	header nav div ul li details ul li:nth-of-type(1){
+		padding: 0;
+	}
+
+	#nav-menu span:nth-of-type(3){
+		margin-bottom: 0;
+	}
+
+	#nav-menu span{
+		display: none;
+	}
+
+	nav a img{
+		width: 108px;
+		height: 108px;
+	}
+
+	nav summary::after {
+		content: "↓";
+		margin-left: 1em;
+	}
+
+	nav details[open] summary::after {
+		content: "↑";
+	}
+
+	nav details ul{
+		display: flex;
+		flex-direction: column;
+		margin-top: 3em;
+	}
+
+	header nav div ul li details ul li:nth-of-type(1){
+		padding: 13px 25px;
+	}
+
+	#nav-menu ul:nth-of-type(3) li:nth-of-type(2) a{
+		color: #006bae;
+		text-decoration: underline;
+	}
 }
 
 /*********************/
@@ -326,12 +384,6 @@ main ul li a, main ul li p, main ul li h2{
 	margin: 15px 25px;
 }
 
-@media (max-width: 769px){
-	main ul li{
-		flex: 0 0 100%;
-	}
-}
-
 main section{
 	margin-top: 100px;
 	padding: 0 12px;
@@ -358,6 +410,18 @@ main section img{
 
 main section h2, main section p, main section a{
 	margin: 13px;
+}
+
+@media (max-width: 769px){
+	main ul li{
+		flex: 0 0 100%;
+	}
+}
+
+@media (min-width: 768px){
+	main article{
+		display: flex;
+	}
 }
 
 /***********************/
