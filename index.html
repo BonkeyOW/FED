@@ -10,47 +10,54 @@
 	
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<script src="scripts/script.js" defer></script>
 </head>
 
 <body>
 <header>
 	<nav>
 		<a href="#"><img src="images/logo.jpg" alt="logo"></a>
-		<details>
-			<summary>☰</summary>
+	
+		<button id="hamburger" aria-label="Open menu">☰</button>
+	
+		<button id="close-menu" aria-label="Sluit menu">✕</button>
+	
+		<div id="nav-menu">
 			<ul>
 				<li><a href="#">App</a></li>
 				<li><a href="#">McDonald's Nieuwsbrief</a></li>
 				<li><a href="#">Werken bij McDonalds</a></li>
 				<li><a href="#">Franchising</a></li>
 			</ul>
-			<div></div>
+			<span></span>
 			<ul>
 				<li>
 					<details>
 						<summary>Menu</summary>
-						<a href="#">Bekijk alle producten</a>
 						<ul>
-							<li><a href="#">Voordeelmenu</a></li>
-							<li><a href="#">Rundvlees</a></li>
-							<li><a href="#">Kip</a></li>
+							<li><a href="#">Bekijk alle producten</a></li>
+							<li><img src="images/13.05.avif" alt="Voordeelmenu"><a href="#">Voordeelmenu</a></li>
+							<li><img src="images/13.05-1.avif" alt="Rundvlees"><a href="#">Rundvlees</a></li>
+							<li><img src="images/13.05-2.avif" alt="Kip"><a href="#">Kip</a></li>
 						</ul>
 					</details>
 				</li>
+					
 				<li><a href="#">Newsroom Pers</a></li>
 				<li><a href="#">Familie</a></li>
 				<li><a href="#">Ook dat doet McDonald's</a></li>
 				<li><a href="#">McDelivery</a></li>
 			</ul>
-			<div></div>
+			<span></span>
 			<ul>
 				<li><a href="#">Zoeken</a></li>
 				<li><a href="#">Vind een restaurant</a></li>
 			</ul>
-			<div></div>
-		</details>
+			<span></span>
+		</div>
 	</nav>
 </header>
+	  
 <main>
 	<h1>Dit is de website van McDonalds Nederland</h1>
 	<ul>
@@ -60,7 +67,7 @@
 			<p>Een krokante, juicy Kipburger met een frisse Kimchi-koolmix en precies genoeg spice - kom jij 'm proeven?</p>
 			<a href="#">Ontdek meer</a>
 		</li>
-		<li>
+		<li>	
 			<img src="images/homeslider-burger.png" alt="Vegetarische burger">
 			<h2>Terug van weggeweest!</h2>
 			<p>De vertrouwde smaak, maar dan zonder vlees.</p>
@@ -94,22 +101,50 @@
 		<a href="#">Nu proberen</a>
 	</section>
 </main>
+
 <footer>
+	<details>
+		<summary>Over Ons</summary>
+		<ul>
+			<li><a href="#">Over ons</a></li>
+			<li><a href="#">Onze geschiedenis</a></li>
+			<li><a href="#">Ons management</a></li>
+			<li><a href="#">Waar staan we voor?</a></li>
+			<li><a href="#">Franchising</a></li>
+		</ul>
+	</details>
+	<details>
+		<summary>Services</summary>
+		<ul>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Meer weten</a></li>
+			<li><a href="#">McDonald's Nieuwsbrief</a></li>
+			<li><a href="#">App</a></li>
+			<li><a href="#">McCafé</a></li>
+		</ul>
+	</details>
+	<details>
+		<summary>Contact</summary>
+		<ul>
+			<li><a href="#">Online Gastenservice</a></li>
+			<li><a href="#">Pers Contact</a></li>
+			<li><a href="#">Newsroom Pers</a></li>
+		</ul>
+	</details>
+	
 	<section>
-		<button>Over ons</button>
-		<button>Services</button>
-		<button>Contact</button>
+		<a href="#"><img src="images/footer-youtube.png" alt="Youtube link"></a>
+		<a href="#"><img src="images/footer-youtube.png" alt="Instagram link"></a>
+		<a href="#"><img src="images/footer-facebook.png" alt="Facebook link"></a>
 	</section>
+
 	<section>
-		<a href="https://www.youtube.com/user/McDonaldsNederland"><img src="images/footer-youtube.png" alt="Youtube link"></a>
-		<a href="https://www.instagram.com/mcdonaldsnl/"><img src="images/footer-youtube.png" alt="Instagram link"></a>
-		<a href="https://www.facebook.com/mcdonaldsnederland/"><img src="images/footer-facebook.png" alt="Facebook link"></a>
+		<ul>
+			<li><a href="#">Disclaimer</a></li>
+			<li><a href="#">Privacy</a><a href="#">Cookies</a></li>
+			<li><img src="images/logo.jpg" alt="logo"><p>© Copyright © 2025 McDonald's Nederland.</p></li>
+		</ul>
 	</section>
-	<ul>
-		<li><a href="#">Disclaimer</a></li>
-		<li><a href="#">Privacy</a><a href="#">Cookies</a></li>
-		<li><img src="images/logo.jpg" alt="logo"><p>© Copyright © 2025 McDonald's Nederland.</p></li>
-	</ul>
 </footer>
 </body>
 </html>

@@ -28,13 +28,24 @@
 /****************/
 
 /* jouw code */
-*{
+body{
+	font-family:  sans-serif, Arial, Helvetica;
+	font-size: 14px;
+    line-height: 24px;
+    color: #292929;
+    letter-spacing: -.15px;
 	margin: 0;
+	max-width: 1170px;
+	margin: 0 auto;
 }
 
 /***********************/
 /* STYLING VOOR HEADER */
 /***********************/
+
+header{
+	box-shadow: 0 .0625rem .5rem 0 rgba(0, 0, 0, .04), 0 .0625rem .3125rem 0 rgba(0, 0, 0, .04);
+}
 
 header nav{
 	display: flex;
@@ -45,8 +56,155 @@ header a img{
 	height: 48px;
 }
 
-header nav details div{
-	border-top: 1px solid rgba(0, 0, 0, .1);
+#nav-menu span{
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+#nav-menu span:nth-of-type(3){
+	margin-bottom: 200px;
+}
+
+nav summary {
+	font-weight: bold;
+	cursor: pointer;
+	list-style: none;
+}
+
+nav details[open] summary::after {
+	content: "-";
+	float: right;
+}
+
+nav summary::after {
+	content: "+";
+	float: right;
+}
+
+
+/* Hamburgermanu styling met media query */
+#nav-menu {
+	display: none;
+	flex-direction: column;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	width: 100%;
+	background: white;
+	z-index: 1000;
+	padding: 0 1em 1em 1em;
+}
+  
+#hamburger, #close-menu {
+	font-size: 2em;
+	background: none;
+	border: none;
+	cursor: pointer;
+  }
+  
+#close-menu {
+	display: none;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+  
+  /* Submenu */
+.submenu {
+	display: none;
+	margin-left: 1em;
+}
+  
+.submenu-toggle {
+	background: none;
+	border: none;
+	font-weight: bold;
+	cursor: pointer;
+}
+  
+@media (max-width: 768px) {
+	#hamburger {
+	  display: block;
+	}
+  
+	#nav-menu.active {
+	  display: flex;
+	}
+  
+	#close-menu.active {
+	  display: block;
+	}
+}
+  
+@media (min-width: 769px) {
+	#hamburger,
+	#close-menu {
+	  display: none;
+	}
+  
+	#nav-menu {
+	  display: flex;
+	  position: static;
+	  flex-direction: row;
+	  gap: 2em;
+	}
+  
+	#nav-menu ul {
+	  display: flex;
+	  gap: 1em;
+	}
+  
+	.submenu {
+	  display: none;
+	  position: absolute;
+	  background: white;
+	  padding: 0.5em;
+	}
+  
+	.submenu-toggle:hover + .submenu {
+	  display: block;
+	}
+}
+
+header ul li{
+	list-style-type: none;
+	margin: 25px 0;
+}
+
+header ul li a{
+	text-decoration: none;
+	color: black;
+}
+
+header ul li summary{
+	font-weight: normal;
+}
+
+header nav div ul li details ul li:nth-of-type(1){
+	min-width: 2in;
+    font-size: 14px;
+    line-height: 20px;
+    color: #292929;
+    text-decoration: none;
+    position: relative;
+    border: 1px solid #adadad;
+    box-shadow: 0 1.5px 1.5px 0 rgba(0, 0, 0, .08);
+    border-radius: .1875rem;
+    padding: 13px 25px;
+    text-align: center;
+    display: inline-block;
+}
+
+header nav div ul li details ul li img{
+	width: 60px;
+	height: 60px;
+	margin-right: 15px;
+}
+
+header nav div ul li details ul li:nth-child(n+2){
+	display: flex;
+  	align-items: center;
+	margin: 0;
 }
 
 /*********************/
@@ -68,12 +226,77 @@ h1{
 }
 
 main ul{
-	border: #111;
-	
+	list-style-type: none;
+	width: 100%;
+	overflow-x: auto;
+	padding: 0;
+	display: flex;
+	gap: 1em;
+	scroll-behavior: smooth;
+	anchor-name: --carousel;
+	scroll-snap-type: x mandatory;
+	scroll-marker-group: after;
+}
+
+main ul li::scroll-marker{
+	content: '';
+	height: 0.5em;
+	width: 0.5em;
+	background-color: black;
+	opacity: 0.5;
+	border-radius: 50%;
+}
+
+main ul li::scroll-marker:target-current{
+	opacity: 1;
+}
+
+main ul::scroll-marker-group{
+	display: flex;
+	justify-content: center;
+	gap: 0.5em;
+}
+
+main ul::-webkit-scrollbar{
+	display: none;
+}
+
+main ul::scroll-button(right), main ul::scroll-button(left){
+	content: '>';
+	border: none;
+	background-color: #ffbc0d;
+	font-size: 1.5rem;
+	color: white;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	border-color: black;
+	cursor: pointer;
+	position: fixed;
+	position-anchor: --carousel;
+	position-area: bottom center;
+	translate: 200%;
+	transform: translateY(5px);
+}
+
+main ul::scroll-button(left){
+	content: '<';
+	position-area: bottom center;
+	translate: -200%;
+}
+
+main ul::scroll-button(right):disabled, main ul::scroll-button(left):disabled{
+	opacity: 50%;
+	cursor: auto;
 }
 
 main ul li{
-	list-style: none;
+	width: 100%;
+	flex: 0 0 27.1em;
+	padding: 1em;
+	scroll-snap-align: center;
+	border: .0625rem solid #cecece;
+    border-radius: 0 0 .25rem .25rem;
 }
 
 main ul li img{
@@ -84,3 +307,154 @@ main ul li img{
     background-size: auto auto;
 }
 
+main ul li a{
+	min-height: 3rem;
+    min-width: 9rem;
+    line-height: 1.25rem;
+    background-color: #ffbc0d;
+    border-radius: 4px;
+    padding: .8125rem 1.5625rem;
+    display: inline-block;
+    align-items: center;
+    border: 0;
+    color: #292929;
+    text-decoration: none;
+    text-align: center;
+}
+
+main ul li a, main ul li p, main ul li h2{
+	margin: 15px 25px;
+}
+
+@media (max-width: 769px){
+	main ul li{
+		flex: 0 0 100%;
+	}
+}
+
+main section{
+	margin-top: 100px;
+	padding: 0 12px;
+}
+
+main section a{
+	min-height: 3rem;
+    min-width: 9rem;
+    line-height: 1.25rem;
+    background-color: #ffbc0d;
+    border-radius: 4px;
+    padding: .8125rem 1.5625rem;
+    display: inline-block;
+    align-items: center;
+    border: 0;
+    color: #292929;
+    text-decoration: none;
+    text-align: center;
+}
+
+main section img{
+	width: 100%;
+}
+
+main section h2, main section p, main section a{
+	margin: 13px;
+}
+
+/***********************/
+/* STYLING VOOR FOOTER */
+/***********************/
+
+footer{
+	margin-top: 8em;
+}
+
+/* styling voor <details> en <summary> van csstricks.com*/
+footer summary {
+position: relative;
+anchor-name: --summary;
+
+&::marker {
+	content: "";
+}
+
+&::before, &::after {
+	content: "";
+	border-block-start: 2px solid black;
+	height: 0;
+	width: 1.1rem;
+	
+	/* Positions the lines */
+	inset-block-start: 50%;
+	inset-inline-end: 0;
+	
+	/* Anchor the shape to the summary */
+	position: absolute;
+	position-anchor: --summary;
+	position-area: top end;
+}
+
+/* Rotate just the ::after line to create a "+"" shape */
+&::after {
+	transform: rotate(90deg);
+	transform-origin: 50%;
+}
+}
+
+/* Rotate the line when open */
+footer details[open] summary::after {
+	transform: rotate(0deg);
+}
+
+footer summary{
+	margin: 8px 25px;
+	font-size: 18px;
+}
+
+footer section{
+	display: flex;
+	justify-content: center;
+	padding: 1em 0 6em 0;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+footer section:nth-of-type(2){
+	padding: 1em 0 0 0;
+}
+
+footer img{
+	margin: 0 8px;
+}
+
+footer ul{
+	padding: 0;
+	margin: 0 0 0 25px;
+}
+
+footer ul li{
+	list-style-type: none;
+	margin: 8.5px 0;
+}
+
+footer ul li a{
+	text-decoration: none;
+	color: #292929;
+}
+
+footer section:nth-of-type(2) ul{
+	margin: 0;
+}
+
+footer section:nth-of-type(2) ul li{
+	display: flex;
+	align-items: center;
+}
+
+footer section:nth-of-type(2) ul li a{
+	text-align: center;
+	margin: 0 auto;
+}
+
+footer section ul li img{
+	width: 28px;
+	height: 28px;
+}
