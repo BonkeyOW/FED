@@ -56,13 +56,63 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  Voor deze test heb ik de officiële website getest van McDonald's Nederland
 
   1. De homepage heeft geen h1 waardoor het voor de (luisterende) gebruiker niet duidelijk is waar de website over gaat. Alle andere pagina's hebben daarentegen wel een h1.
   2. De afbeeldingen van alle items op het menu hebben geen alt-tekst. De gebruiker hoort dan alleen maar "Unlabelled Image".
   3. Veel onnodige div's in de html code
   4. De teksten zijn duidelijk te begrijpen en je kan makkelijk navigeren door de website met de voiceover.
 
+  ### WCAG checklist
+
+  | WCAG checklist     | yes/no         |
+  | ---            | ---                |
+  | Use plain language and avoid figures of speech idioms, and complicated metaphors | yes |
+  | Make sure that button, a (links), and label (in forms) content is unique and descriptive | yes |
+  | Validate your HTML | no |
+  | Use a lang attribute on the html element | yes |
+  | Provide a unique title for each page | yes |
+  | Ensure that viewport zoom is not disabled | yes |
+  | make sure there is a visible focus stijle for interactive elements that are navigated to via keyboard input | yes |
+  | Check to see that keyboard focus order matches the visual layout | yes |
+  | Check that the site can be rotated to any orientation | yes |
+  | Remove horizontal scrolling | yes |
+  | Ensure that button and link icons can be activated with ease | yes |
+  | Ensure sufficient space between interactive items in order to provide a scroll area | yes |
+  | Use heading elements to introduce content | yes |
+  | Use only one h1 elemet per page or view | yes |
+  | Heading elements should be written in a logical sequence | no |
+  | Don't skip heading levels | no |
+  | Use list elements for list content | yes |
+  | Make sure that all img elements have an alt attribute | no |
+  | Make sure that decorative images use null alt attribute values | yes |
+  | Provide a text alternative for complex images such as charts, graphs and maps | no |
+  | For images contaning text, make sure the alt description includes the image's text | yes |
+  | Make sure that media does not autoplay | yes |
+  | Check to see that all media can be paused | yes |
+  | Video - Confirm the presence of catiopns | yes |
+  | Audio - Confirm that transcripts are available | yes |
+  | Use the a element for links | yes |
+  | Ensure that links are recognizable as links | yes |
+  | Ensure that controls have :focus states | yes |
+  | Use the button element for buttons | yes |
+  | Provide a skip link and make srure that it is visible when focused | yes |
+  | Identify links that open in a new tab or window | yes |
+  | Check if dark and light mode are supported | no |
+  | Check if high-contrast mode is supported | no |
+  | Increase text size to 200% | no |
+  | Make sure color isn't the only way information is conveyed | yes |
+  | Ensure animations are subtle and do not flash too much | yes |
+  | Provide a mechanism to pause background video | yes |
+  | Make sure all animations obeys teh prefers-reduced-motion media query | yes |
+  | Check the contrast for all normal-sized text | yes |
+  | Check teh contrast for all large-sized text  | yes |
+  | Check the contrast for all icons | yes |
+  | Check text that overlaps images or videos | yes |
+  | Check custon ::selection colors | yes |
+
+ - 8x no  
+ - 35x yes
 </details>
 
 
@@ -90,27 +140,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  HTML code voor eerste pagina is geschreven.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
-
+  - Sommige <button>buttons</button> veranderen in <a>a'tjes</a>
+  - Carrousel verwerken in een ul li
+  - summary details gebruiken voor footer
 </details>
 
 
@@ -123,27 +160,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  Hamburgermenu met summary details gefixt en begonnen met stijling voor eerste pagina.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
-
+  - Het is handiger om hamburgermenu te maken met JavaScript
+  - Custom properties voor kleuren
+  - @media query gebruiken voor responsiveness en light/dark mode
 </details>
 
 
@@ -171,17 +195,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
