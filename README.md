@@ -256,7 +256,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  | Light mode | Darkk mode |
+  | Light mode | Dark mode |
   | ---            | ---                |
   | Homepage op desktop formaat | Homepage op Desktop formaat |
   | <img src="readme-images/home-desktop-light.png" width="375px" alt="Mijn uitwerking van de homepage op desktop formaat in light mode"> | <img src="readme-images/home-desktop-dark.png" width="375px" alt="Mijn uitwerking van de homepage op desktop formaat in dark mode"> | 
@@ -265,18 +265,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | <img src="readme-images/cola-desktop-light.png" width="375px" alt="Mijn uitwerking van de cola pagina op desktop formaat in light mode"> | <img src="readme-images/cola-desktop-dark.png" width="375px" alt="Mijn uitwerking van de cola pagina op desktop formaat in dark mode"> |
   | <img src="readme-images/cola-tabletphone-light.png" width="375px" alt="Mijn uitwerking van de cola pagina op tablet en phone formaat in light mode"> | <img src="readme-images/cola-tabletphone-dark.png" width="375px" alt="Mijn uitwerking van de cola pagina op tablet en phone formaat in dark mode"> |
 
-
-
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
-
+  | # | Wat heb ik geleerd | Screenshot |
+  | --- | --- | --- |
+  | 1 | Ik heb geleerd hoe je met display: grid; elementen kan stijlen | <img src="readme-images/grid.png.jpg" width="375px" alt="css styling met display grid"> |
+  | 2 | Ik heb geleerd hoe je met HTML elementen een tabel kan maken | <img src="readme-images/tabel.png" width="375px" alt="table element in HTML"> |
+  | 3 | Ik heb geleerd hoe je met HTML elementen een uitklapbare sectie kan maken | <img src="readme-images/details.png" width="375px" alt="summary en details elementen in HTML"> |
+  | 4 | Ik heb geleerd hoe je met nieuwe CSS pseudo classes en elementen kan werken | <img src="readme-images/pseudo.png" width="375px" alt="pseudo classes en elementen in css"> |
+  | 5 | Ik heb geleerd hoe je met custom properties kleur kan aanpassen | <img src="readme-images/custom-properties.png" width="375px" alt="custom properties in css"> |
+  | 6 | Ik heb geleerd hoe je met een media query responsiveness kan maken | <img src="readme-images/responsiveness.png" width="375px" alt="media query in css voor responsiveness"> |
+  | 7 | Ik heb geleerd hoe je met een media query dark/light mode kan maken | <img src="readme-images/dark.png" width="375px" alt="media query in css voor dark mode"> |
+  | 8 | Ik heb geleerd dat je met "nth-of-type()" of "first/last-of-type" bepaalde elementen kan selecteren voor stijling | <img src="readme-images/nth.png" width="375px" alt="stijling in css met first en last-of-type"> |
+  | 9 | Ik heb geleerd hoe je met JavaScript een hamburgermenu kan maken | <img src="readme-images/JS.png" width="375px" alt="JavaScript met code voor hamburgermenu"> |
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  | # | Wat niet gelukt is | Screenshot |
+  | --- | --- | --- |
+  | 1 | Het is niet gelukt om de footer anders te stijlen op desktop formaat | <img src="readme-images/footer.png" width="375px" alt="footer van mijn website"> |
+  | 2 | Het is niet gelukt om de carrousel op desktop formaat 1 op 1 na te maken van de officiële site van McDonalds Nederland | <img src="readme-images/carrousel.png" width="375px" alt="carrousel van mijn website"> |
 </details>
 
 
@@ -286,13 +292,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Bronnenlijst
 
 <details open>
-  <summary>continu bijhouden terwijl je werkt</summary>
+  <summary>Bronnen</summary>
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
-  Nb. ChatGpT en andere AI horen er ook bij.
-  Nb. Vermeld de bronnen ook in je code.
-
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. Algemene stijling via inspect https://www.mcdonalds.com/nl/nl-nl.html
+  1. Stijling voor carrousel https://www.youtube.com/watch?v=gmI5nvzv170
+  2. Stijling voor tabel op cola pagina https://chatgpt.com/share/68dc480b-fe54-800d-aca8-f2530c12c4b5 
+  3. Stijling voor details en summary https://css-tricks.com/using-styling-the-details-element/ 
+  4. Stijling voor positioning van voedingswaarde, nav bar en home https://copilot.microsoft.com/shares/dFux4jaUBUGyZ1jdPHKpN 
+  5. JS code voor hamburgermenu van https://copilot.microsoft.com/shares/Nvg4tjRvtfiHyJKS8S3WV 
 </details>

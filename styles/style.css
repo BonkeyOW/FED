@@ -27,6 +27,8 @@
 	}
 }
 
+
+
 /****************/
 /* JOUW STYLING */
 /****************/
@@ -38,17 +40,19 @@ body{
     color: var(--color-text);
 	background-color: var(--color-background);
     letter-spacing: -.15px;
-	margin: 0;
 	max-width: 1170px;
 	margin: 0 auto;
 }
+
+
 
 /***********************/
 /* STYLING VOOR HEADER */
 /***********************/
 
+/* stijling van box-shadow en buttons via inspect op https://www.mcdonalds.com/nl/nl-nl.html */
 header{
-	box-shadow: 0 .0625rem .5rem 0 rgba(0, 0, 0, .04), 0 .0625rem .3125rem 0 rgba(0, 0, 0, .04);
+	box-shadow: 0 .0625rem .5rem 0 var(--color-border), 0 .0625rem .3125rem 0 var(--color-border);
 }
 
 header nav{
@@ -62,7 +66,7 @@ header a img{
 
 #nav-menu span{
     border: 0;
-    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-top: 1px solid var(--color-border2);
 }
 
 #nav-menu span:nth-of-type(3){
@@ -83,10 +87,10 @@ nav details[open] summary::after {
 nav summary::after {
 	content: "+";
 	float: right;
+	font-size: 2em;
+	font-weight: lighter;
 }
 
-
-/* Hamburgermenu styling met media query */
 #nav-menu {
 	display: none;
 	flex-direction: column;
@@ -105,26 +109,13 @@ nav summary::after {
 	background: none;
 	border: none;
 	cursor: pointer;
-  }
+}
   
 #close-menu {
 	display: none;
 	position: absolute;
-	top: 20px;
+	top: 10px;
 	right: 20px;
-}
-  
-  /* Submenu */
-.submenu {
-	display: none;
-	margin-left: 1em;
-}
-  
-.submenu-toggle {
-	background: none;
-	border: none;
-	font-weight: bold;
-	cursor: pointer;
 }
 
 header ul li{
@@ -168,107 +159,7 @@ header nav div ul li details ul li:nth-child(n+2){
 	margin: 0;
 }
 
-@media (max-width: 870px) {
-	#hamburger {
-	  display: block;
-	}
-  
-	#nav-menu.active {
-	  display: flex;
-	}
-  
-	#close-menu.active {
-	  display: block;
-	}
-}
 
-@media (min-width: 870px){
-	#hamburger, #close-menu {
-	  display: none;
-	}
-  
-	#nav-menu {
-	display: grid;
-	grid-template-columns: auto auto;
-	position: static;
-}
-
-	#nav-menu ul:nth-of-type(1),
-	#nav-menu ul:nth-of-type(2) {
-	grid-column: 1;
-	}
-	
-	#nav-menu ul:nth-of-type(3) {
-	grid-column: 2;
-	grid-row: 1 / span 2; 
-	}
-  
-	#nav-menu ul {
-	  display: flex;
-	  gap: 1em;
-	}
-  
-	.submenu {
-	  display: none;
-	  position: absolute;
-	  background: var(--color-background);
-	  padding: 0.5em;
-	}
-  
-	.submenu-toggle:hover + .submenu {
-	  display: block;
-	}
-
-	header ul li{
-		list-style-type: none;
-		margin: 0;
-	}
-	
-	header ul li summary{
-		font-weight: normal;
-	}
-	
-	header nav div ul li details ul li:nth-of-type(1){
-		padding: 0;
-	}
-
-	#nav-menu span:nth-of-type(3){
-		margin-bottom: 0;
-	}
-
-	#nav-menu span{
-		display: none;
-	}
-
-	nav a img{
-		width: 108px;
-		height: 108px;
-	}
-
-	nav summary::after {
-		content: "↓";
-		margin-left: 1em;
-	}
-
-	nav details[open] summary::after {
-		content: "↑";
-	}
-
-	nav details ul{
-		display: flex;
-		flex-direction: column;
-		margin-top: 3em;
-	}
-
-	header nav div ul li details ul li:nth-of-type(1){
-		padding: 13px 25px;
-	}
-
-	.blue{
-		color: #006bae;
-		text-decoration: underline;
-	}
-}
 
 /***************************/
 /* STYLING VOOR HOMEPAGINA */
@@ -288,6 +179,7 @@ main{
 	width: 1px;
 }
 
+/* Stijling voor carrousel van https://www.youtube.com/watch?v=gmI5nvzv170 */
 .home ul{
 	list-style-type: none;
 	width: 100%;
@@ -415,48 +307,9 @@ main{
 
 .home section h2, .home section p, .home section a{
 	margin: 13px;
-}
+} 
 
-@media (max-width: 870px){
-	.home ul li{
-		flex: 0 0 100%;
-	}
-}
 
-@media (min-width: 870px) {
-.home {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto 1fr;
-	gap: 2rem;
-}
-
-.home > ul {
-	grid-column: 1 / span 2;
-}
-
-.home > section:nth-of-type(1) {
-	grid-column: 1;
-	grid-row: 2;
-}
-
-.home > section:nth-of-type(2) {
-	grid-column: 2;
-	grid-row: 2;
-}
-
-.home ul li::scroll-marker{
-	opacity: 0;
-	height: 0;
-	width: 0;
-}
-
-.home ul li::scroll-marker:target-current{
-	opacity: 0;
-}
-
-}
-  
 
 /*********************/
 /* STYLING VOOR COLA */
@@ -543,6 +396,7 @@ main{
 	border-bottom: 0px;
 }
 
+/* styling voor <details> van https://css-tricks.com/using-styling-the-details-element/ */
 .cola summary {
 	font-weight: bold;
 	position: relative;
@@ -561,17 +415,15 @@ main{
 		height: 0;
 		width: 1.1rem;
 		
-		/* Positions the lines */
 		inset-block-start: 50%;
 		inset-inline-end: 0;
 		
-		/* Anchor the shape to the summary */
 		position: absolute;
 		position-anchor: --summary;
 		position-area: top end;
 	}
 
-	/* Rotate just the ::after line to create a "+"" shape */
+	/* Draait alleen de ::after lijn om een "+" vorm te maken */
 	&::after {
 		transform: rotate(90deg);
 		transform-origin: 50%;
@@ -602,6 +454,7 @@ main{
 	text-align: center;
 }
 
+/* code voor positioning van voedingswaarde van Microsoft Copilot https://copilot.microsoft.com/shares/dFux4jaUBUGyZ1jdPHKpN */
 .cola details:first-of-type ul{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -697,62 +550,7 @@ table tr:last-child td {
 	letter-spacing: -.15px;
 }
 
-@media (min-width: 870px){
-	.cola section:first-of-type{
-		display: flex;
-		flex-direction: row-reverse;
-	}
 
-	.cola h1{
-		margin-top: 2em;
-		text-align: left;
-	}
-
-	.cola section:first-of-type div > p:first-of-type {
-		text-align: left;
-		font-size: 20px;
-		margin-bottom: 20px;
-	}
-	
-	.cola section:first-of-type div > p:nth-of-type(2) {
-		text-align: left;
-		font-weight: bold;
-		font-size: 15px;
-	}
-	
-	.cola section:first-of-type div > p:nth-of-type(3) {
-		font-size: 14px;
-		line-height: 1.6;
-		margin: 1em 0;
-		text-align: left;
-	}
-
-	.cola section:first-of-type ul{
-		justify-content: left;
-	}
-
-	.home ul::scroll-button(right), .home ul::scroll-button(left){
-		height: 45px;
-		width: 45px;
-		position-area: bottom center;
-		translate: 100%;
-		transform: translateY(5px);
-	}
-	
-	.home ul::scroll-button(left){
-		position-area: bottom center;
-		translate: -100%;
-	}
-
-	.cola details:first-of-type ul {
-		display: flex;
-		justify-content: center;
-	}
-
-	.cola details:first-of-type ul li{
-		margin: 0 2em;
-	}
-}
 
 /***********************/
 /* STYLING VOOR FOOTER */
@@ -762,7 +560,7 @@ footer{
 	margin-top: 8em;
 }
 
-/* styling voor <details> en <summary> van csstricks.com*/
+/* styling voor <details> en <summary> van https://css-tricks.com/using-styling-the-details-element/*/
 footer summary {
 position: relative;
 anchor-name: --summary;
@@ -777,24 +575,20 @@ anchor-name: --summary;
 	height: 0;
 	width: 1.1rem;
 	
-	/* Positions the lines */
 	inset-block-start: 50%;
 	inset-inline-end: 0;
 	
-	/* Anchor the shape to the summary */
 	position: absolute;
 	position-anchor: --summary;
 	position-area: top end;
 }
 
-/* Rotate just the ::after line to create a "+"" shape */
 &::after {
 	transform: rotate(90deg);
 	transform-origin: 50%;
 }
 }
 
-/* Rotate the line when open */
 footer details[open] summary::after {
 	transform: rotate(0deg);
 }
@@ -852,4 +646,211 @@ footer section:nth-of-type(2) ul li a{
 footer section ul li img{
 	width: 28px;
 	height: 28px;
+}
+
+
+
+
+
+/********************************/
+/* STYLING VOOR DESKTOP FORMAAT */
+/********************************/
+
+
+
+
+
+/* media query voor header*/
+
+@media (max-width: 870px) {
+	#nav-menu.active {
+	  display: flex;
+	}
+  
+	#close-menu.active {
+	  display: block;
+	}
+}
+
+@media (min-width: 870px){
+	#hamburger, #close-menu {
+	  display: none;
+	}
+
+	/* code voor positioning van nav bar van Microsoft Copilot https://copilot.microsoft.com/shares/dFux4jaUBUGyZ1jdPHKpN */
+	#nav-menu {
+		display: grid;
+		grid-template-columns: auto auto;
+		position: static;
+	}
+
+	#nav-menu ul:nth-of-type(1),
+	#nav-menu ul:nth-of-type(2) {
+		grid-column: 1;
+	}
+	
+	#nav-menu ul:nth-of-type(3) {
+		grid-column: 2;
+		grid-row: 1 / span 2; 
+	}
+  
+	#nav-menu ul {
+	  	display: flex;
+	  	gap: 1em;
+	}
+
+	header ul li{
+		list-style-type: none;
+		margin: 0;
+	}
+	
+	header ul li summary{
+		font-weight: normal;
+	}
+	
+	header nav div ul li details ul li:nth-of-type(1){
+		padding: 0;
+	}
+
+	#nav-menu span:nth-of-type(3){
+		margin-bottom: 0;
+	}
+
+	#nav-menu span{
+		display: none;
+	}
+
+	nav a img{
+		width: 108px;
+		height: 108px;
+	}
+
+	nav summary::after {
+		content: "↓";
+		margin-left: 1em;
+	}
+
+	nav details[open] summary::after {
+		content: "↑";
+	}
+
+	nav details ul{
+		display: flex;
+		flex-direction: column;
+		margin-top: 3em;
+	}
+
+	header nav div ul li details ul li:nth-of-type(1){
+		padding: 13px 25px;
+	}
+
+	.blue{
+		color: #006bae;
+		text-decoration: underline;
+	}
+}
+
+
+
+/* media query voor homepage */
+
+@media (max-width: 870px){
+	.home ul li{
+		flex: 0 0 100%;
+	}
+}
+
+/* code voor positioning van home van Microsoft Copilot https://copilot.microsoft.com/shares/dFux4jaUBUGyZ1jdPHKpN */
+@media (min-width: 870px) {
+.home {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto 1fr;
+	gap: 2rem;
+}
+
+.home > ul {
+	grid-column: 1 / span 2;
+}
+
+.home > section:nth-of-type(1) {
+	grid-column: 1;
+	grid-row: 2;
+}
+
+.home > section:nth-of-type(2) {
+	grid-column: 2;
+	grid-row: 2;
+}
+
+.home ul li::scroll-marker{
+	opacity: 0;
+	height: 0;
+	width: 0;
+}
+
+.home ul li::scroll-marker:target-current{
+	opacity: 0;
+}
+}
+
+
+
+/* media query voor coca pagina */
+
+@media (min-width: 870px){
+	.cola section:first-of-type{
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	.cola h1{
+		margin-top: 2em;
+		text-align: left;
+	}
+
+	.cola section:first-of-type div > p:first-of-type {
+		text-align: left;
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	
+	.cola section:first-of-type div > p:nth-of-type(2) {
+		text-align: left;
+		font-weight: bold;
+		font-size: 15px;
+	}
+	
+	.cola section:first-of-type div > p:nth-of-type(3) {
+		font-size: 14px;
+		line-height: 1.6;
+		margin: 1em 0;
+		text-align: left;
+	}
+
+	.cola section:first-of-type ul{
+		justify-content: left;
+	}
+
+	.home ul::scroll-button(right), .home ul::scroll-button(left){
+		height: 45px;
+		width: 45px;
+		position-area: bottom center;
+		translate: 100%;
+		transform: translateY(5px);
+	}
+	
+	.home ul::scroll-button(left){
+		position-area: bottom center;
+		translate: -100%;
+	}
+
+	.cola details:first-of-type ul {
+		display: flex;
+		justify-content: center;
+	}
+
+	.cola details:first-of-type ul li{
+		margin: 0 2em;
+	}
 }
