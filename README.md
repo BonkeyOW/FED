@@ -256,10 +256,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  | Mcdonald's Homepage | McDonald's Coca-Cola |
+  | Light mode | Darkk mode |
   | ---            | ---                |
-  | Homepage op desktop formaat | Homepage op tablet en phone formaat |
-  | <img src="readme-images/home-desktop-light.png" width="375px" alt="Mijn uitwerking van de homepage op desktop formaat in light mode"> | <img src="readme-images/home-desktop-dark.png" width="375px" alt="Mijn uitwerking van de homepage op desktop formaat in dark mode"> | <img src="readme-images/home-tabletphone-light.png" width="375px" alt="Mijn uitwerking van de homepage op tablet en phone formaat in light mode"> | <img src="readme-images/home-tabletphone-dark.png" width="375px" alt="Mijn uitwerking van de homepage op tablet en phone formaat in dark mode"> |
+  | Homepage op desktop formaat | Homepage op Desktop formaat |
+  | <img src="readme-images/home-desktop-light.png" width="375px" alt="Mijn uitwerking van de homepage op desktop formaat in light mode"> | <img src="readme-images/home-desktop-dark.png" width="375px" alt="Mijn uitwerking van de homepage op desktop formaat in dark mode"> | 
+  | <img src="readme-images/home-tabletphone-light.png" width="375px" alt="Mijn uitwerking van de homepage op tablet en phone formaat in light mode"> | <img src="readme-images/home-tabletphone-dark.png" width="375px" alt="Mijn uitwerking van de homepage op tablet en phone formaat in dark mode"> |
+  | Cola op tablet en phone formaat | Cola op tablet en phone formaat |
+  | <img src="readme-images/cola-desktop-light.png" width="375px" alt="Mijn uitwerking van de cola pagina op desktop formaat in light mode"> | <img src="readme-images/cola-desktop-dark.png" width="375px" alt="Mijn uitwerking van de cola pagina op desktop formaat in dark mode"> |
+  | <img src="readme-images/cola-tabletphone-light.png" width="375px" alt="Mijn uitwerking van de cola pagina op tablet en phone formaat in light mode"> | <img src="readme-images/cola-tabletphone-dark.png" width="375px" alt="Mijn uitwerking van de cola pagina op tablet en phone formaat in dark mode"> |
 
 
 
