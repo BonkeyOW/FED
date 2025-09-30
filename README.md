@@ -40,7 +40,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | Screenshot(s) van eerste pagina (small screen) | Screenshot(s) van tweede pagina (small screen) |
   | ---            | ---                |
-  | Mcdonald's Homepage | McDonald's Coca-Cola |
+  | McDonald's Homepage | McDonald's Coca-Cola |
   | <img src="readme-images/mcd-homepage.png" width="375px" alt="Homepage van McDonalds Nederland"> | <img src="readme-images/mcd-cocacola.png" width="375px" alt="Coca-Cola pagina van McDonalds Nederland"> |
 </details>
 
@@ -266,9 +266,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | <img src="readme-images/cola-tabletphone-light.png" width="375px" alt="Mijn uitwerking van de cola pagina op tablet en phone formaat in light mode"> | <img src="readme-images/cola-tabletphone-dark.png" width="375px" alt="Mijn uitwerking van de cola pagina op tablet en phone formaat in dark mode"> |
 
   ### Dit ging goed/Heb ik geleerd: 
-  | # | Wat heb ik geleerd | Screenshot |
+  |  | Wat heb ik geleerd | Screenshot |
   | --- | --- | --- |
-  | 1 | Ik heb geleerd hoe je met display: grid; elementen kan stijlen | <img src="readme-images/grid.png.jpg" width="375px" alt="css styling met display grid"> |
+  | 1 | Ik heb geleerd hoe je met display: grid; elementen kan stijlen | <img src="readme-images/grid.png" width="375px" alt="css styling met display grid"> |
   | 2 | Ik heb geleerd hoe je met HTML elementen een tabel kan maken | <img src="readme-images/tabel.png" width="375px" alt="table element in HTML"> |
   | 3 | Ik heb geleerd hoe je met HTML elementen een uitklapbare sectie kan maken | <img src="readme-images/details.png" width="375px" alt="summary en details elementen in HTML"> |
   | 4 | Ik heb geleerd hoe je met nieuwe CSS pseudo classes en elementen kan werken | <img src="readme-images/pseudo.png" width="375px" alt="pseudo classes en elementen in css"> |
@@ -279,7 +279,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | 9 | Ik heb geleerd hoe je met JavaScript een hamburgermenu kan maken | <img src="readme-images/JS.png" width="375px" alt="JavaScript met code voor hamburgermenu"> |
 
   ### Dit was lastig/Is niet gelukt:
-  | # | Wat niet gelukt is | Screenshot |
+  |  | Wat niet gelukt is | Screenshot |
   | --- | --- | --- |
   | 1 | Het is niet gelukt om de footer anders te stijlen op desktop formaat | <img src="readme-images/footer.png" width="375px" alt="footer van mijn website"> |
   | 2 | Het is niet gelukt om de carrousel op desktop formaat 1 op 1 na te maken van de officiële site van McDonalds Nederland | <img src="readme-images/carrousel.png" width="375px" alt="carrousel van mijn website"> |
