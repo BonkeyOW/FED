@@ -38,15 +38,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Je opdracht:
   https://www.mcdonalds.com/nl/nl-nl.html 
 
-  <div>
-  #### Screenshot(s) van de eerste pagina (small screen): 
-  McDonalds Homepage 
-  <img src="readme-images/mcd-homepage.png" width="375px" alt="Homepage van McDonalds Nederland">
-
-  #### Screenshot(s) van de tweede pagina (small screen):
-  McDonalds Coca-Cola
-  <img src="readme-images/mcd-cocacola.png" width="375px" alt="Coca-Cola pagina van McDonalds Nederland">
-  </div>
+  | Screenshot(s) van eerste pagina (small screen) | Screenshot(s) van tweede pagina (small screen) |
+  | ---            | ---                |
+  | Mcdonald's Homepage | McDonald's Coca-Cola |
+  | <img src="readme-images/mcd-homepage.png" width="375px" alt="Homepage van McDonalds Nederland"> | <img src="readme-images/mcd-cocacola.png" width="375px" alt="Coca-Cola pagina van McDonalds Nederland"> |
 </details>
 
 
@@ -122,13 +117,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
-  <div>
-  ### de hele pagina: 
-  <img src="readme-images/breakdown-homepage-smallscreen.jpg" width="375px" alt="breakdown van de mcdonalds nederland homepage in smallscreen formaat">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/breakdown-cocacola-smallscreen.jpg" width="375px" alt="breakdown van de mcdonalds nederland cocacola menu item in smallscreen formaat">
-  </div>
+  | Breakdownschets van eerste pagina (small screen) | Breakdownschets van tweede pagina (small screen) |
+  | ---            | ---                |
+  | Mcdonald's Homepage | McDonald's Coca-Cola |
+  | <img src="readme-images/breakdown-homepage-smallscreen.jpg" width="375px" alt="breakdown van de mcdonalds nederland homepage in smallscreen formaat"> | <img src="readme-images/breakdown-cocacola-smallscreen.jpg" width="375px" alt="breakdown van de mcdonalds nederland cocacola menu item in smallscreen formaat"> |
 </details>
 
 
@@ -231,7 +224,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
  - 4x no  
  - 39x yes
-
 </details>
 
 
@@ -264,7 +256,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  | Mcdonald's Homepage | McDonald's Coca-Cola |
+  | ---            | ---                |
+  | Desktop formaat | Tablet en phone formaat |
+  | <img src="readme-images/home-desktop-light.png" width="375px" alt="Mijn uitwerking van de homepage op desktop formaat in light mode"> | <img src="readme-images/home-desktop-dark.png" width="375px" alt="Mijn uitwerking van de homepage op desktop formaat in dark mode"> | <img src="readme-images/home-tabletphone-light.png" width="375px" alt="Mijn uitwerking van de homepage op tablet en phone formaat in light mode"> | <img src="readme-images/home-tabletphone-dark.png" width="375px" alt="Mijn uitwerking van de homepage op tablet en phone formaat in dark mode">
+
 
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -295,12 +291,4 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   1. bron 1
   2. bron 2
   3. ...
-
 </details>
-
-<style>
-  div {
-    display: flex;
-    gap: 25px;
-  }
-</style>
