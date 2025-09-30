@@ -258,8 +258,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Je uitkomst - karakteristiek screenshots:
   | Mcdonald's Homepage | McDonald's Coca-Cola |
   | ---            | ---                |
-  | Desktop formaat | Tablet en phone formaat |
-  | <img src="readme-images/home-desktop-light.png" width="375px" alt="Mijn uitwerking van de homepage op desktop formaat in light mode"> | <img src="readme-images/home-desktop-dark.png" width="375px" alt="Mijn uitwerking van de homepage op desktop formaat in dark mode"> | <img src="readme-images/home-tabletphone-light.png" width="375px" alt="Mijn uitwerking van de homepage op tablet en phone formaat in light mode"> | <img src="readme-images/home-tabletphone-dark.png" width="375px" alt="Mijn uitwerking van de homepage op tablet en phone formaat in dark mode">
+  | Homepage op desktop formaat | Homepage op tablet en phone formaat |
+  | <img src="readme-images/home-desktop-light.png" width="375px" alt="Mijn uitwerking van de homepage op desktop formaat in light mode"> | <img src="readme-images/home-desktop-dark.png" width="375px" alt="Mijn uitwerking van de homepage op desktop formaat in dark mode"> | <img src="readme-images/home-tabletphone-light.png" width="375px" alt="Mijn uitwerking van de homepage op tablet en phone formaat in light mode"> | <img src="readme-images/home-tabletphone-dark.png" width="375px" alt="Mijn uitwerking van de homepage op tablet en phone formaat in dark mode"> |
 
 
 
